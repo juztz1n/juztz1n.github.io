@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+    color: lime;
+    background-color: #000;
+}
+
+a
+{
+    color: lime;
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
+
+/* NAV */
+nav
+{
+    transition: 1s;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    font-family: "Fira Code", sans-serif;
+    position: fixed;
+    text-align: center;
+}
+
+html:not([data-scroll='0']) nav
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+html:not([data-scroll='0']) nav:hover
+{
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.btn
+{
+    transition: .7s;
+    cursor: pointer;
+    background-color: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 12px;
+    border-radius: 30px;
+    border: 2px solid lime;
+    text-decoration: none;
+}
+
+.btn:hover
+{
+    transition: 1s;
+    background-color: lime;
+    color: #000;
+}
+
+nav > img
+{
+    visibility: hidden;
+    transition: 1.5s;
+    transition-delay: 1.5s visibility;
+    cursor: pointer;
+    margin-bottom: -0.35vw;
+    opacity: 0;
+    margin-right: 60vw;
+    width: 2vw;
+}
+
+html:not([data-scroll='0']) nav > img
+{
+    transition-delay: 1s;
+    visibility: visible;
+    margin-right: 30vw;
+    opacity: 1;
+}
+
+nav > span
+{
+    visibility: visible;
+}
+
+html:not([data-scroll='0']) nav > span
+{
+    visibility: hidden;
+}
+/* NAV END */
+
+/* HEADER */
+header
+{
+    transition: 3s;
+    background-repeat: no-repeat;
+    background-position: 15vw center;
+    background-size: 30%;
+    background-image: url("../res/icon.png");
+    width: 100%;
+    height: 100vh;
+}
+
+html:not([data-scroll='0']) header
+{
+    background-position: -50vw;
+    height: 80vh;
+}
+
+header > p
+{
+    transition: 3s padding;
+    font-family: "Fira Code", sans-serif;
+    font-size: 1.25em;
+    padding-top: 44vh;
+    padding-left: 50vw;
+    text-align: left;
+}
+
+html:not([data-scroll='0']) header > p
+{
+    padding-top: 30vh;
+    padding-left: 32vw;
+}
+
+header > center > img
+{
+    width: 2.5em;
+    margin-top: 38vh;
+    cursor: pointer;
+    visibility: visible;
+    animation: scrollme 2.5s infinite ease;
+}
+
+@keyframes scrollme
+{
+    0%
+    {
+        transform: translateY(0em);
+        opacity: 1;
+    }
+
+    25%
+    {
+        transform: translateY(-.07em);
+        opacity: .5;
+    }
+
+    50%
+    {
+        transform: translateY(0em);
+        opacity: 1;
+    }
+
+    75%
+    {
+        transform: translateY(-.07em);
+        opacity: .5;
+    }
+}
+
+html:not([data-scroll='0']) header > center > img
+{
+    visibility: hidden;
+}
+/* HEADER END */
+
+/* PROJECTS */
+#projects
+{
+    width: 100%;
+    height: 120vh;
+    background-color: #fff;
+}
+
+#projects > h1
+{
+    color: #000;
+    font-size: 27px;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 12vh;
+    padding-left: 2vw;
+    padding-bottom: 1vh;
+}
+
+.project
+{
+    float: left;
+    font-family: "Fira Code", sans-serif;
+    padding: 2vw;
+    margin: 2vw;
+    color: #000;
+    width: 24.75vw;
+    height: 22vh;
+    border: .1vw solid #000;
+    text-overflow: ellipsis;
+    overflow: auto;
+}
+
+.project > span
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+}
+/* PROJECTS END */
+
+/* FOOTER */
+footer
+{
+    width: 100%;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 7vh;
+    padding-bottom: 6.5vh;
+    bottom: 0px;
+}
+
+footer > span
+{
+    text-decoration: none;
+}
+
+footer > a
+{
+    margin-left: 20px;
+    color: lime;
+    transition: .5s;
+}
+
+footer > a:hover
+{
+    color: #fff;
+}
+/* FOOTER END */
