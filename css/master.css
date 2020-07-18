@@ -55,6 +55,36 @@ html:not([data-scroll='0']) nav:hover
     background-color: rgba(0, 0, 0, 0.85);
 }
 
+nav > img
+{
+    visibility: hidden;
+    transition: 1.5s;
+    transition-delay: 1.5s visibility;
+    cursor: pointer;
+    margin-bottom: -0.35vw;
+    opacity: 0;
+    margin-right: 60vw;
+    width: 2.5vw;
+}
+
+html:not([data-scroll='0']) nav > img
+{
+    transition-delay: 1s;
+    visibility: visible;
+    margin-right: 30vw;
+    opacity: 1;
+}
+
+nav > span
+{
+    visibility: visible;
+}
+
+html:not([data-scroll='0']) nav > span
+{
+    visibility: hidden;
+}
+
 .btn
 {
     transition: .7s;
@@ -76,36 +106,6 @@ html:not([data-scroll='0']) nav:hover
     transition: 1s;
     background-color: lime;
     color: #000;
-}
-
-nav > img
-{
-    visibility: hidden;
-    transition: 1.5s;
-    transition-delay: 1.5s visibility;
-    cursor: pointer;
-    margin-bottom: -0.35vw;
-    opacity: 0;
-    margin-right: 60vw;
-    width: 2vw;
-}
-
-html:not([data-scroll='0']) nav > img
-{
-    transition-delay: 1s;
-    visibility: visible;
-    margin-right: 30vw;
-    opacity: 1;
-}
-
-nav > span
-{
-    visibility: visible;
-}
-
-html:not([data-scroll='0']) nav > span
-{
-    visibility: hidden;
 }
 /* NAV END */
 
