@@ -107,6 +107,29 @@ html:not([data-scroll='0']) nav > span
     background-color: lime;
     color: #000;
 }
+
+.btn2
+{
+    transition: .7s;
+    cursor: pointer;
+    background-color: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 12px;
+    border-radius: 30px;
+    border: 2px solid lime;
+    text-decoration: none;
+}
+
+.btn2:hover
+{
+    transition: 1s;
+    background-color: lime;
+    color: #fff;
+}
 /* NAV END */
 
 /* HEADER */
