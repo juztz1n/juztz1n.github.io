@@ -142,7 +142,7 @@ html:not([data-scroll='0']) header > p
 {
     width: 50vw;
     padding-top: 30vh;
-    padding-left: 32vw;
+    padding-left: 25vw;
 }
 
 header > center > img
