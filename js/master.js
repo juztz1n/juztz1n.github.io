@@ -37,6 +37,11 @@ function goToContent() {
     element.scrollIntoView({ behavior: 'smooth', block: 'start'});
 }
 
+function goToAbout() {
+    var element = document.getElementById("about");
+    element.scrollIntoView({ behavior: 'smooth', block: 'start'});
+}
+
 function goToFooter() {
     var element = document.getElementById("footer");
     element.scrollIntoView({ behavior: 'smooth', block: 'start'});

@@ -11,15 +11,12 @@
         <nav>
             <img src="res/icon.png" onmousedown="goToHeader()">
             <a class="btn" onmousedown="goToContent()">MY PROJECTS</a>
+            <a class="btn" onmousedown="goToAbout()">ABOUT ME</a>
             <a class="btn" onmousedown="goToFooter()">CONTACT</a>
         </nav>
         <header id="header">
             <p>
-                <b><i>Hello,</i></b><br>
-                my name's Hazhir, but you can call me by my alias "zin".
-                I love many things, and coding is no exception.
-                You can find some of my public projects down below.
-                If you like what you see, don't hesitate to contact me.
+                <b><i>Greetings,</i></b> and welcome!
             </p>
             <center><img src="res/scroll.png" onmousedown="goToContent()"></center>
         </header>
@@ -28,13 +25,15 @@
             <div class="project">
                 <span>GAMMA ENGINE</span>
                 <p>
-                    Gamma Engine is a heavily modified version of <a href="https://github.com/juztz1n/Zed" target="_blank">Zed</a>. Using the same system (component-based system) and with hopefully more features. I am currently only focusing on the rendering part of the engine until I get some good enough graphics for basic physics and creating actual games.
+                    Gamma Engine is a heavily modified version of <a href="https://github.com/juztz1n/Zed" target="_blank" id="link">Zed</a>. Using the same system (component-based system) and with hopefully more features. I am currently only focusing on the rendering part of the engine until I get some good enough graphics for basic physics and creating actual games.
                 </p>
-                <br>
-                <a class="btn2" href="https://github.com/juztz1n/gamma_engine" target="_blank">OPEN ON GITHUB (BETA)</a>
-                <a class="btn2" href="https://github.com/juztz1n/gamma_engine_alpha" target="_blank">OPEN GITHUB REPO (ALPHA)</a>
+                <br><br>
+                <center>
+                <a class="btn2" href="https://github.com/juztz1n/gamma_engine" target="_blank">VIEW ON GITHUB (BETA)</a>
+                <a class="btn2" href="https://github.com/juztz1n/gamma_engine_alpha" target="_blank">VIEW ON GITHUB (ALPHA)</a>
+            </center>
             </div>
-            <div class="project">
+            <div class="project disabled-project">
                 <span>UNTITELD</span>
                 <p>
                 </p>
@@ -42,21 +41,21 @@
                 <a class="btn2">COMING SOON...</a>
             </div>
 
-            <div class="project">
+            <div class="project disabled-project">
                 <span>UNTITELD</span>
                 <p>
                 </p>
                 <br>
                 <a class="btn2">COMING SOON...</a>
             </div>
-            <div class="project">
+            <div class="project disabled-project">
                 <span>UNTITLED</span>
                 <p>
                 </p>
                 <br>
-                <a class="btn">COMING SOON...</a>
+                <a class="btn2">COMING SOON...</a>
             </div>
-            <div class="project">
+            <div class="project disabled-project">
                 <span>UNTITLED</span>
                 <p>
                 </p>
@@ -64,12 +63,28 @@
                 <a class="btn2">COMING SOON...</a>
             </div>
 
-            <div class="project">
+            <div class="project disabled-project">
                 <span>UNTITLED</span>
                 <p>
                 </p>
                 <br>
                 <a class="btn2">COMING SOON...</a>
+            </div>
+        </div>
+        <div id="about">
+            <h1>ABOUT ME</h1>
+            <p>
+                Hello there, my name's "Hazhir", and I currently live in Linköping, Sweden.
+                <br><br>
+                I've always really enjoyed complex puzzles and unique challenges, whether that'd be programming or solving real life problems. I work best under pressure, and in difficult environments because it's the challange that I enjoy.
+                <br><br>
+                Technology often seems like dark magic to most, and it seemed so to me as well. Realizing that there's an art to all of this dark magic, I decided at 11 to teach myself to become a magician!
+                <br><br>
+                Ever since then, I've dabbled in many programming languages, and many APIs. All the way from <b>Python</b> with <b>Keras</b> and <b>TensorFlow</b> to <b>C++</b> with <b>OpenGL</b>, and <b>Java</b> with <b>Minecraft</b>.
+                <br><br>
+                I am a very fast learner and I can learn any programming language or API that you throw at me in a very short period of time. My friends know me as hard-working and I'm always determined to create the best software to make people's lives better and easier.
+            </p>
+            <div id="me">
             </div>
         </div>
         <footer id="footer">
