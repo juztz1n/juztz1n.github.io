@@ -22,54 +22,42 @@
         </header>
         <div id="projects">
             <h1>MY PROJECTS</h1>
-            <div class="project">
-                <span>GAMMA ENGINE</span>
-                <p>
-                    Gamma Engine is a heavily modified version of <a href="#" target="_blank" id="link">Zed</a>. Using the same system (component-based system) and with hopefully more features. I am currently only focusing on the rendering part of the engine until I get some good enough graphics for basic physics and creating actual games.
-                </p>
-                <br><br>
-                <center>
-		<p>LINKS ARE BROKEN FOR NOW</p><br>
-                <a class="btn2" href="#" target="_blank">VIEW ON GITHUB (BETA)</a>
-                <a class="btn2" href="#" target="_blank">VIEW ON GITHUB (ALPHA)</a>
-            </center>
-            </div>
-            <div class="project disabled-project">
-                <span>UNTITLED</span>
-                <p>
-                </p>
-                <br>
-                <a class="btn2">COMING SOON...</a>
-            </div>
-
-            <div class="project disabled-project">
-                <span>UNTITLED</span>
-                <p>
-                </p>
-                <br>
-                <a class="btn2">COMING SOON...</a>
-            </div>
-            <div class="project disabled-project">
-                <span>UNTITLED</span>
-                <p>
-                </p>
-                <br>
-                <a class="btn2">COMING SOON...</a>
-            </div>
-            <div class="project disabled-project">
-                <span>UNTITLED</span>
-                <p>
-                </p>
-                <br>
-                <a class="btn2">COMING SOON...</a>
-            </div>
-
-            <div class="project disabled-project">
-                <span>UNTITLED</span>
-                <p>
-                </p>
-                <br>
-                <a class="btn2">COMING SOON...</a>
+            <div id="projects_container">
+                <div class="project left">
+                    <span>LAMBDA [λ]</span>
+                    <p>
+                        Lambda is a management program that I'm currently developing for my future home, as of 2021. The idea is to put this on a panel, hook it into my electronics, and stick it to my wall. <br><br> Lambda will be the software that will be able to give me the power to, turn outlets on/off, monitor data (such as daily mood or even power consumption), and manage all my tasks for the day, week, and month.
+                    </p>
+                    <br>
+                    <center>
+                    <p>The source is proprietary but heres a demo.</p><br>
+                    <button class="btn2"  onclick="window.open('lambda_demo.png','popUpWindow','height=600,width=1095,left=10,top=10,,scrollbars=yes,menubar=no'); return false;">VIEW DEMO</button>
+                </center>
+                </div>
+                <div class="project">
+                    <span>GAMMA [γ]</span>
+                    <p>
+                        Gamma Engine is a heavily modified version of <a href="#" onclick="window.open('https://github.com/juztz1n/Zed','popUpWindow','height=800,width=600,left=10,top=10,,scrollbars=yes,menubar=no'); return false;" id="link">Zed</a>. Using the same system (component-based system) and with hopefully more features. I am currently only focusing on the rendering part of the engine until I get some good enough graphics for basic physics and creating actual games.
+                    </p>
+                    <br><br>
+                    <img width="99%" src="gamma_preview1.png" alt="Gamma Preview Bricks"><br><br>
+                    <img width="99%"src="gamma_preview2.png" alt="Gamma Preview Rusted Metal">
+                    <center>
+                    <br><br>
+                    <button class="btn2" onclick="window.open('https://github.com/juztz1n/gamma_engine','popUpWindow','height=800,width=600,left=10,top=10,,scrollbars=yes,menubar=no'); return false;">VIEW ON GITHUB (BETA)</button>
+                    <button class="btn2" onclick="window.open('https://github.com/juztz1n/gamma_engine_alpha','popUpWindow','height=800,width=600,left=10,top=10,,scrollbars=yes,menubar=no'); return false;">VIEW ON GITHUB (ALPHA)</button>
+                </center>
+                </div>
+                <div class="project right disabled-project">
+                    <span>TAU [τ]</span>
+                    <p>
+                        Under development.
+                    </p>
+                    <center><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <button class="btn2">UNDER DEVELOPMENT</button>
+                    </center>
+                </div>
             </div>
         </div>
         <div id="about">

@@ -18,6 +18,12 @@ body
     background-color: #000;
 }
 
+button
+{
+    outline: none;
+    background: none;
+}
+
 a
 {
     transition: .5s;
@@ -264,19 +270,23 @@ html:not([data-scroll='0']) header > center > img
     float: left;
     font-family: "Fira Code", sans-serif;
     padding: 2vw;
-    margin: 2vw;
+    margin: 2vw 0vw;
     color: #000;
     width: 24.75vw;
-    height: 22vh;
+    height: 60vh;
     border: .1vw solid #000;
     text-overflow: ellipsis;
     overflow: auto;
     transition: 1s;
 }
 
+.project > img
+{
+    border: .1vw solid #000;
+}
+
 .project:hover
 {
-    box-shadow: -.4vw -.8vh 0px 2px rgba(0,0,0,0.4);
     transition: 1s;
     background-color: lime;
 }
@@ -305,9 +315,28 @@ html:not([data-scroll='0']) header > center > img
     background-size: 10%;
 }
 
-.disabled-project:hover
+.left
 {
-    box-shadow: -.4vw -.8vh 0px 2px rgba(0,0,0,0);
+    margin-top: 4.5vw;
+    margin-left: 16.81875vw;
+    width: 15vw;
+    height: 50vh;
+    border: .1vw solid #000;
+    border-right: 0px;
+}
+
+.right
+{
+    margin-top: 4.5vw;
+    width: 15vw;
+    height: 50vh;
+    border: .1vw solid #000;
+    border-left: 0px;
+}
+
+#projects_container
+{
+    align-content: center;
 }
 /* PROJECTS END */
 
